@@ -1,13 +1,23 @@
 {
-	"version": "1.0.1",
-	"name": "@types/frend",
+	"version": "1.0.2",
+	"name": "types-frend",
+	"description": "TypeScript definitions for Frend",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/thinknathan/types-frend.git"
+	},
+	"files": [
+		"frend.d.ts"
+	],
 	"license": "CC0-1.0",
 	"scripts": {
-		"check": "tsc --noEmit"
+		"check": "tsc --noEmit",
+		"prettier": "prettier \"./**/*.{yml,json,mjs,md,css}\" --write"
 	},
 	"main": "./frend.d.ts",
 	"types": "./frend.d.ts",
 	"devDependencies": {
+		"prettier": "^3.2.5",
 		"typescript": ">=5.4.2"
 	}
 }
